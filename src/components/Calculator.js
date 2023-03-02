@@ -60,7 +60,7 @@ const Calculator = () => {
 
   return (
     <CalculatorContainer>
-      <Display>{displayValue || 0}</Display>
+      <Display data-testid = "result">{displayValue || 0}</Display>
       <ButtonContainer>
         <Button onClick={() => handleButtonClick('7')}>7</Button>
         <Button onClick={() => handleButtonClick('8')}>8</Button>
